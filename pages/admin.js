@@ -10,8 +10,8 @@ export default function Admin() {
 
     return (
         <AdminLayout pagina={'Admin'}>
-            <h1 className='text-4xl font-black'>Panel de administración</h1>
-            <p className='text-2xl my-10'>Administra las ordenes</p>
+            <h1 className='text-4xl font-black mb-20'>Panel de administración</h1>
+            {/* <p className='text-2xl my-10'>Administra las ordenes</p> */}
 
             {data && data.length ? data.map(orden =>
                 <Orden key={orden.id} orden={orden} />
