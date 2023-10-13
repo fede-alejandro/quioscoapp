@@ -51,6 +51,7 @@ const QuioscoProvider = ({ children }) => {
         setModal(!modal)
     }
 
+
     const handleEditarCantidades = id => {
         const productoActualizar = pedido.filter(producto => producto.id === id)
         setProducto(productoActualizar[0])
